@@ -1,0 +1,63 @@
+
+
+.jumbotron {
+    background-image: url("../images/jumbotron-bg.jpg");
+   
+    
+  }
+  
+  .jumbotron h1 {
+    color: lightblue;
+    font-family: cursive;
+    font-style: italic;
+    text-shadow: 3px 3px #fff;
+  
+  }
+  
+  .instructions {
+    font-size: 25px;
+    color: lightblue;
+    font-family: cursive;
+    text-align: center; 
+  }
+  
+  .row {
+      color: lightblue;
+      font-family: cursive;
+
+  }
+
+  .Info p {
+      color:navy;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times;
+
+  }
+
+  .Info ul {
+      color: green;
+      font-size: 18px;
+      font-family: 'Times New Roman', Times;
+  }
+
+  .Info li {
+      color:navy;
+      font-size: 15px;
+      font-family: 'Times New Roman', Times;
+      line-height: 1.2cm;
+      text-align: left
+  }
+
+  .slideShow p {
+      text-align: center;
+      color: green;
+      font-size: 18px;
+  }
+
+  .Copyright h3 {
+      text-align: center;
+      color:lightblue;
+      font-family: cursive;
+      font-size: 25px;
+
+  }

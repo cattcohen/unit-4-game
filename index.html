@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Crystal Collector</title>
+  <!-- Reset CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <!-- Latest compiled and minified CSS (Bootstrap) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- More (Bootstrap) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified Javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="jumbotron text-center">
+    <h1>Crystal Collector</h1></div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 instructions">
+            <h2>Instructions</h2> 
+            <p>You will be given a random number at the start of the game.</p>
+            <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p>You win the game by matching your total score to the random number. You lost the game if your total score goes above the random number.</p>
+            <p>The value of each crystal is hidden from you until you click on it.</p>
+          </div>
+        </div>
+
+    <div class="row">
+      <div class="col-sm-9">
+        <h2>Score to match: <span id="scoreToMatch"></span></h2>
+      </div>
+    <div class="col-sm-3">
+        <h3>Wins: <span id="wins"></span></h3>
+        <h3 class="text-left">Losses: <span id="losses"></span></h3>
+      </div>
+    </div>
+
+      <div class="row text-center">
+        <div class="col-sm-3">
+        <img src="assets/images/red-crystal.jpg" class="img-thumnail red" alt="Red Crystal" width="200" height="200" />
+        </div>
+        <div class="col-sm-3">
+        <img src="assets/images/blue-crystal.jpg" class="img-thumbnail blue" alt="Blue Crystal" width="200" height="200" />
+        </div>
+        <div class="col-sm-3">
+        <img src="assets/images/yellow-crystal.jpg" class="img-thumnail yellow" alt="Yellow Crystal" width="200" height="200" />
+        </div>
+        <div class="col-sm-3">
+          <img src="assets/images/green-crystal.jpg" class="img-thumnail green" alt="Green Crystal" width="200" height="200" />
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+      <h2>Your total score is: <span id="totalScore"></span></h2>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div class= "row text-center Info">
+    <div class= "col-sm-12">
+        <p> *** Thank you for visiting my Crystal Collector Game Page! In case this 
+            game has gotten you interested in crystal hunting IRL here are a few things to consider
+            before you begin your adventure: ***
+        </p>
+            <ul>Packing Right!</ul>
+            <li>A Good Shovel - I have seen people using full size shovels but in my experience you can't beat a good study Mini Shovel. Trust me its worth the investment. Mining for crystals can involve tight spaces and steep hills.</table></li>
+            <p></p>
+            <p></p>
+            <li>A Bucket - A bucket, a backpack - whatever seems easiest and allows you
+                to most easily manouver around possibly rough terrain. 
+                You can get super creative with this guys! - I like the backpack route. 
+                I try to consolidate my equipment so I have free hands as often as I can. Carrying a shovel a backpack with water and some snacks
+                AND a bucket can be a little much. BUT whatever floats your boat. If you're going to go with the backpack I recommend
+                lining it with a garbage can liner so you can easily have your crystals consolidated
+                when you go to empty it out at the end of the day. </li>
+            <p></p>
+            <p></p>
+            <li>A Classifier Screen - A classifier screen can make a huge difference especially during (or after) a rainy day. Dirt can easily disguise crystals and screening out the dirt will make the hours you spend on your adventure way more effecient.</li>
+            <p></p>
+            <p></p>
+            <li>A Head Lamp - Not totally necessary - but why not. If your just getting into crystal hunting
+                you may not immediately delve into 10ft holes in the mountain side to go digging. However, for safety precautions - 
+            like staying on the mountain for longer than anticipated, its better to be save than sorry if it gets dark out. </li>
+            <p></p>
+            <p></p>
+            <li>Gloves - And I mean the kind you get dirty. While gloves are not a necessity it can sometimes 
+                be uncomfrotable to have chunks of dirt underneath your nail beds. Gloves can also prevent
+                cuts and scrapes - but now that I mention that bring some bandades and maybe a first aid kit too! </li>
+            <p></p>
+            <p></p>
+            <li>WATER WATER WATER! - I have gone on crystal excursions before where I've anticipated my journey
+                being a couple hours at max. I pack a nalgene full of water and think that is enough but trust 
+                me when I say crystal hunting is addicting! Two hours turns into four when you begin finding 
+                various shapes and sizes of crystals in various spots and altitudes on the mountain. </li>
+            <p></p>
+            <p></p>
+            <li>Layers & Snacks - Like the comfort of a warm latte and fuzzy socks on a chilly day, an insulated
+                jacket (or in the summer at least a rain jacket) and some GORP (Good Old Raisins and Peanuts) will
+                relax, energize and rejuvinate all at the same time! FUEL YOURSELF!</li>
+            
+            <ul>Attitude</ul>
+            <li>Respect - These little (and big) crystals, rocks etc are very sacred and should be
+                treated as such.</li>
+            <p></p>
+            <p></p>
+            <li>Breathe - If something happens whether its an injury or a loss of direction in the area you're 
+                adventuring in, it is important to keep your cool and keep oxygen flowing to your brain. Taking a deep breath
+                in and out a few times - s  l   o   w   l   y - is essential to your mind, body connection and allows
+                for a clear mind to make the right safe and careful decisions in these situations.  
+             </li>
+            <p></p>
+            <p></p>
+            <li>Lighten up! - Crystal hunting adventures are supposed to be a lighthearted, 
+                beautiful experience. Dont get discouraged if you dont find many - your just getting started
+                and it takes some time for you to develop a keen eye for spotting them out. HAVE FUN!
+            </li>
+
+    </div>
+
+
+    <div class= "row text-center slideShow">
+        <div class= "col-sm-12">
+            <p> This Slide Show is Super Cool & Helpful!</p>
+            <p> If you scroll a few slides to the right there are a couple awesome detailed maps 
+                with a TON of gemstone and rock locations around the Washington State area.
+            </p>
+    </div>
+
+    <div class= "container">
+    <iframe src="https://arcg.is/0bOWOy" width="650" height="400"></iframe>
+    </div>
+
+
+    <br>
+    <div class="row text-center Copyright">
+    <div class="col-sm-12">
+    <h3>
+        <p>Good Luck on Your Adventures!</p>
+       <p> ** Copyright Cat Cohen 2018 **</p>
+    </h3>
+    </div>
+</body>
+<!-- JS -->
+<script src="assets/javascript/game.js"></script> 
+</html>
